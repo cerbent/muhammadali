@@ -1,0 +1,60 @@
+@mixin df{
+  display: flex;
+  //justify-content: ;
+  align-items: center;
+}
+
+@mixin ds{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+@mixin h1{
+  font-family: 'Montserrat',sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  color: #0C76D8;
+
+}
+@mixin p{
+  font-family: 'Montserrat',sans-serif;
+  font-weight: 400;
+  font-size: 11px;
+
+  color: #2A2D46;
+}
+@mixin das{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@mixin al{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+@mixin se{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@mixin  so{
+  margin: 10px 20px;
+}
+@mixin gr{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 0rem;
+}
+@mixin  go{
+  display: grid;
+  grid-template-columns: repeat(4,2fr);
+  gap: 2rem;
+}
+@mixin hp{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}

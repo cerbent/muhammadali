@@ -1,0 +1,17 @@
+@media (max-width: 1200px) {
+  #gadjetum {
+    width: 1191px;
+  }
+  .main--blocks {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #hero .hero--nav .drone {
+    width: 533px;
+    position: absolute;
+    right: 161px;
+    top: 70px;
+  }
+}
+
+/*# sourceMappingURL=media.css.map */

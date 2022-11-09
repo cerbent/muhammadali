@@ -1,0 +1,958 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+#header .header--title {
+  display: flex;
+  align-items: center;
+}
+#header .header--a {
+  display: flex;
+  align-items: center;
+}
+#header .header--block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#header .header--title2 h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  color: #0C76D8;
+}
+#header .header--title2 p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 11px;
+  color: #2A2D46;
+}
+#header .header--a p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 11px;
+  color: #2A2D46;
+  margin: 0 10px;
+}
+#header .header--a p:hover {
+  cursor: pointer;
+  color: #0C76D8;
+}
+#header .header--nomber {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#header .header--nomber h1 {
+  margin: 0 15px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  line-height: 16px;
+  color: #2A2D46;
+}
+#header .header--nomber button {
+  width: 130px;
+  height: 30px;
+  left: 1079px;
+  top: 36px;
+  border: 1px solid #EB2D66;
+}
+#header .header--btn button {
+  width: 130px;
+  height: 30px;
+  left: 1079px;
+  top: 36px;
+  border: 1px solid #EB2D66;
+}
+#header .header--btn button:hover {
+  color: #EB2D66;
+  background: azure;
+}
+#header .header--icon {
+  color: #EB2D66;
+}
+#header .header--icon select {
+  border: none;
+  font-weight: 700;
+  font-size: 12px;
+  color: #2A2D46;
+}
+
+#hero .hero {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#hero .hero--block h1 {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 44px;
+  color: #2A2D46;
+}
+#hero .hero--block p {
+  margin: 10px 0;
+  width: 370px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  color: #2A2D46;
+}
+#hero .hero--block button {
+  margin: 10px 0;
+  width: 244px;
+  height: 57px;
+  color: azure;
+  background: #EB2D66;
+  box-shadow: 0px 7px 35px rgba(235, 45, 102, 0.35);
+}
+#hero .hero--block button:hover {
+  background: darkkhaki;
+  color: #FFFFFF;
+}
+#hero .hero--nav {
+  position: relative;
+}
+#hero .hero--nav .fon {
+  position: relative;
+}
+#hero .hero--nav .drone {
+  width: 640px;
+  position: absolute;
+  right: 170px;
+  top: 70px;
+}
+#hero .hero--nav__title {
+  position: relative;
+}
+#hero .hero--nav__title--t {
+  position: absolute;
+  width: 111px;
+  height: 22px;
+  left: 400px;
+  bottom: 130px;
+}
+#hero .hero--nav__title--t h1 {
+  width: 111px;
+  font-weight: 900;
+  font-size: 15px;
+  color: #FFFFFF;
+}
+#hero .hero--nav__title--t p {
+  margin: 10px 0;
+  width: 156px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFFFFF;
+}
+#hero .hero--nav__title--t h3 {
+  margin: 10px 0;
+  width: 61px;
+  font-weight: 700;
+  font-size: 12px;
+  color: #efe9e9;
+}
+#hero .hero--nav__divs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 10px;
+  position: relative;
+  bottom: 20px;
+}
+#hero .hero--nav__divs--d {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#hero .hero--nav__divs--d__do {
+  margin: 0 10px;
+  width: 39px;
+  height: 8px;
+  background: rgb(154, 154, 154);
+}
+#hero .hero--nav__divs--d__do {
+  margin: 0 10px;
+  width: 39px;
+  height: 8px;
+  background: rgb(154, 154, 154);
+}
+#hero .hero--nav__divs--d__do1 {
+  width: 39px;
+  height: 8px;
+  background: rgb(255, 255, 255);
+}
+#hero .hero--nav__divs ion-icon {
+  font-size: 20px;
+  position: absolute;
+  left: 620px;
+  bottom: 10px;
+  color: #FFFFFF;
+}
+
+#tabs .tabs--blocks {
+  display: grid;
+  grid-template-columns: repeat(4, 3fr);
+  gap: 2rem;
+}
+#tabs .tabs--blocks input {
+  display: none;
+}
+#tabs .tabs--blocks #Телефоны:checked ~ .tabs--blocks__block2,
+#tabs .tabs--blocks #Телефоны:checked ~ .tabs--blocks__block3,
+#tabs .tabs--blocks #Телефоны:checked ~ .tabs--blocks__block4 {
+  opacity: 0.2;
+  transition: 0.4s;
+}
+#tabs .tabs--blocks #Дроны:checked ~ .tabs--blocks__block1,
+#tabs .tabs--blocks #Дроны:checked ~ .tabs--blocks__block3,
+#tabs .tabs--blocks #Дроны:checked ~ .tabs--blocks__block4 {
+  opacity: 0.2;
+  transition: 0.4s;
+}
+#tabs .tabs--blocks #Планшеты:checked ~ .tabs--blocks__block1,
+#tabs .tabs--blocks #Планшеты:checked ~ .tabs--blocks__block2,
+#tabs .tabs--blocks #Планшеты:checked ~ .tabs--blocks__block4 {
+  opacity: 0.2;
+  transition: 0.4s;
+}
+#tabs .tabs--blocks #Игрушки:checked ~ .tabs--blocks__block1,
+#tabs .tabs--blocks #Игрушки:checked ~ .tabs--blocks__block2,
+#tabs .tabs--blocks #Игрушки:checked ~ .tabs--blocks__block3 {
+  opacity: 0.2;
+  transition: 0.4s;
+}
+#tabs .tabs--titles {
+  margin: 40px 0;
+  display: flex;
+}
+#tabs .tabs--titles h1 {
+  font-weight: 900;
+  font-size: 25px;
+  line-height: 30px;
+  color: #2A2D46;
+}
+#tabs .tabs--titles__labels--l {
+  margin-top: 10px;
+  margin-left: 40px;
+  width: 55px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #6e6c6c;
+  display: flex;
+}
+#tabs .tabs--titles__labels--l label {
+  margin: 0 10px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #2A2D46;
+}
+#tabs .tabs--titles__labels:hover {
+  color: blue;
+  font-size: 15px;
+}
+#tabs .tabs--blocks {
+  display: grid;
+  grid-template-columns: repeat(4, 2fr);
+  gap: 2rem;
+  background: #ffffff;
+  box-shadow: 0 15px 50px rgba(67, 76, 109, 0.08);
+}
+#tabs .tabs--blocks__block1 {
+  background: #ffffff;
+  box-shadow: 0 15px 50px rgba(67, 76, 109, 0.08);
+}
+#tabs .tabs--blocks__block1 h3 {
+  margin: 10px 20px;
+  font-weight: 900;
+  font-size: 17px;
+  line-height: 21px;
+  color: #2A2D46;
+}
+#tabs .tabs--blocks__block1 img {
+  display: flex;
+  align-items: center;
+  margin: 40px 35px;
+}
+#tabs .tabs--blocks__block1--content__p {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#tabs .tabs--blocks__block1--content__p .pup {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 19px;
+  color: #2C3BA0;
+}
+#tabs .tabs--blocks__block1--content__p .pup1 {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 19px;
+  color: #646986;
+}
+#tabs .tabs--blocks__block1--content__price {
+  margin: 20px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#tabs .tabs--blocks__block1--content__price h4 {
+  margin-right: 80px;
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 18px;
+  /* Цвет темы */
+  color: #0C76D8;
+}
+#tabs .tabs--blocks__block1--content__price ion-icon {
+  width: 20px;
+  height: 17px;
+  color: #EB2D66;
+  border: 1px solid #EB2D66;
+}
+#tabs .tabs--blocks__block2 {
+  background: #ffffff;
+  box-shadow: 0 15px 50px rgba(67, 76, 109, 0.08);
+}
+#tabs .tabs--blocks__block2 h3 {
+  margin: 10px 20px;
+  font-weight: 900;
+  font-size: 17px;
+  line-height: 21px;
+  color: #2A2D46;
+}
+#tabs .tabs--blocks__block2 img {
+  display: flex;
+  align-items: center;
+  margin: 40px 35px;
+}
+#tabs .tabs--blocks__block2--content__p {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#tabs .tabs--blocks__block2--content__p .pup {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 19px;
+  color: #2C3BA0;
+}
+#tabs .tabs--blocks__block2--content__p .pup1 {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 19px;
+  color: #646986;
+}
+#tabs .tabs--blocks__block2--content__price {
+  margin: 20px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#tabs .tabs--blocks__block2--content__price h4 {
+  margin-right: 80px;
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 18px;
+  /* Цвет темы */
+  color: #0C76D8;
+}
+#tabs .tabs--blocks__block2--content__price ion-icon {
+  width: 20px;
+  height: 17px;
+  color: #EB2D66;
+  border: 1px solid #EB2D66;
+}
+#tabs .tabs--blocks__block3 {
+  background: #ffffff;
+  box-shadow: 0 15px 50px rgba(67, 76, 109, 0.08);
+}
+#tabs .tabs--blocks__block3 h3 {
+  margin: 10px 20px;
+  font-weight: 900;
+  font-size: 17px;
+  line-height: 21px;
+  color: #2A2D46;
+}
+#tabs .tabs--blocks__block3 img {
+  display: flex;
+  align-items: center;
+  margin: 40px 35px;
+}
+#tabs .tabs--blocks__block3--content__p {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#tabs .tabs--blocks__block3--content__p .pup {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 19px;
+  color: #2C3BA0;
+}
+#tabs .tabs--blocks__block3--content__p .pup1 {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 19px;
+  color: #646986;
+}
+#tabs .tabs--blocks__block3--content__price {
+  margin: 20px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#tabs .tabs--blocks__block3--content__price h4 {
+  margin-right: 80px;
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 18px;
+  /* Цвет темы */
+  color: #0C76D8;
+}
+#tabs .tabs--blocks__block3--content__price ion-icon {
+  width: 20px;
+  height: 17px;
+  color: #EB2D66;
+  border: 1px solid #EB2D66;
+}
+#tabs .tabs--blocks__block4 {
+  background: #ffffff;
+  box-shadow: 0 15px 50px rgba(67, 76, 109, 0.08);
+}
+#tabs .tabs--blocks__block4 h3 {
+  margin: 10px 20px;
+  font-weight: 900;
+  font-size: 17px;
+  line-height: 21px;
+  color: #2A2D46;
+}
+#tabs .tabs--blocks__block4 img {
+  display: flex;
+  align-items: center;
+  margin: 40px 35px;
+}
+#tabs .tabs--blocks__block4--content__p {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#tabs .tabs--blocks__block4--content__p .pup {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 19px;
+  color: #2C3BA0;
+}
+#tabs .tabs--blocks__block4--content__p .pup1 {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 19px;
+  color: #646986;
+}
+#tabs .tabs--blocks__block4--content__price {
+  margin: 20px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#tabs .tabs--blocks__block4--content__price h4 {
+  margin-right: 80px;
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 18px;
+  /* Цвет темы */
+  color: #0C76D8;
+}
+#tabs .tabs--blocks__block4--content__price ion-icon {
+  width: 20px;
+  height: 17px;
+  color: #EB2D66;
+  border: 1px solid #EB2D66;
+}
+
+#main .main--title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px 0;
+}
+#main .main--blocks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#main .main--blocks__block {
+  position: relative;
+}
+#main .main--blocks__block--h1 {
+  position: absolute;
+  bottom: 180px;
+  right: 185px;
+}
+#main .main--blocks__block--h1 h1 {
+  width: 326px;
+  height: 66px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 27px;
+  color: #FFFFFF;
+}
+#main .main--blocks__block--h1 p {
+  margin: 20px 0;
+  width: 346px;
+  height: 22px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: #dcdcdc;
+}
+#main .main--blocks__block--h1__d {
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  bottom: 140px;
+  background: #FFFFFF;
+}
+#main .main--blocks__block--h1__pl {
+  position: absolute;
+  width: 30px;
+  height: 35px;
+  bottom: 260px;
+  left: 400px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 40px;
+  color: #FFFFFF;
+}
+#main .main--blocks__block1 {
+  position: relative;
+}
+#main .main--blocks__block1--h1 {
+  position: absolute;
+  bottom: 180px;
+  right: 170px;
+}
+#main .main--blocks__block1--h1 h1 {
+  width: 373px;
+  height: 66px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 27px;
+  color: #FFFFFF;
+}
+#main .main--blocks__block1--h1 p {
+  margin: 20px 0;
+  width: 346px;
+  height: 22px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: #dcdcdc;
+}
+#main .main--blocks__block1--h1__d {
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  bottom: 140px;
+  background: #FFFFFF;
+}
+#main .main--blocks__block1--h1__pl {
+  position: absolute;
+  width: 30px;
+  height: 35px;
+  bottom: 260px;
+  left: 400px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 40px;
+  color: #FFFFFF;
+}
+
+#iphone .iphone--title {
+  margin: 20px 0;
+}
+#iphone .iphone--title h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  line-height: 30px;
+  color: #2A2D46;
+}
+#iphone .iphone--blocks {
+  margin: 20px 0;
+  display: grid;
+  grid-template-columns: repeat(4, 2fr);
+  gap: 2rem;
+  background: #ffffff;
+  box-shadow: 0 15px 50px rgba(67, 76, 109, 0.08);
+}
+#iphone .iphone--blocks__block1 {
+  background: #ffffff;
+  box-shadow: 0 15px 50px rgba(67, 76, 109, 0.08);
+}
+#iphone .iphone--blocks__block1:hover {
+  background: #6e6c6c;
+}
+#iphone .iphone--blocks__block1 h3 {
+  margin: 10px 20px;
+  font-weight: 900;
+  font-size: 17px;
+  line-height: 21px;
+  color: #2A2D46;
+}
+#iphone .iphone--blocks__block1 img {
+  display: flex;
+  align-items: center;
+  margin: 40px 35px;
+}
+#iphone .iphone--blocks__block1--content__p {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#iphone .iphone--blocks__block1--content__p .pup {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 19px;
+  color: #2C3BA0;
+}
+#iphone .iphone--blocks__block1--content__p .pup1 {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 19px;
+  color: #646986;
+}
+#iphone .iphone--blocks__block1--content__price {
+  margin: 20px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#iphone .iphone--blocks__block1--content__price h4 {
+  margin-right: 80px;
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 18px;
+  /* Цвет темы */
+  color: #0C76D8;
+}
+#iphone .iphone--blocks__block1--content__price ion-icon {
+  width: 20px;
+  height: 17px;
+  color: #EB2D66;
+  border: 1px solid #EB2D66;
+}
+#iphone .iphone--blocks__block2 {
+  background: #ffffff;
+  box-shadow: 0 15px 50px rgba(67, 76, 109, 0.08);
+}
+#iphone .iphone--blocks__block2:hover {
+  background: #6e6c6c;
+}
+#iphone .iphone--blocks__block2 h3 {
+  margin: 10px 20px;
+  font-weight: 900;
+  font-size: 17px;
+  line-height: 21px;
+  color: #2A2D46;
+}
+#iphone .iphone--blocks__block2 img {
+  display: flex;
+  align-items: center;
+  margin: 40px 35px;
+}
+#iphone .iphone--blocks__block2--content__p {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#iphone .iphone--blocks__block2--content__p .pup {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 19px;
+  color: #2C3BA0;
+}
+#iphone .iphone--blocks__block2--content__p .pup1 {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 19px;
+  color: #646986;
+}
+#iphone .iphone--blocks__block2--content__price {
+  margin: 20px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#iphone .iphone--blocks__block2--content__price h4 {
+  margin-right: 80px;
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 18px;
+  /* Цвет темы */
+  color: #0C76D8;
+}
+#iphone .iphone--blocks__block2--content__price ion-icon {
+  width: 20px;
+  height: 17px;
+  color: #EB2D66;
+  border: 1px solid #EB2D66;
+}
+#iphone .iphone--blocks__block3 {
+  background: #ffffff;
+  box-shadow: 0 15px 50px rgba(67, 76, 109, 0.08);
+}
+#iphone .iphone--blocks__block3:hover {
+  background: #6e6c6c;
+}
+#iphone .iphone--blocks__block3 h3 {
+  margin: 10px 20px;
+  font-weight: 900;
+  font-size: 17px;
+  line-height: 21px;
+  color: #2A2D46;
+}
+#iphone .iphone--blocks__block3 img {
+  display: flex;
+  align-items: center;
+  margin: 40px 35px;
+}
+#iphone .iphone--blocks__block3--content__p {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#iphone .iphone--blocks__block3--content__p .pup {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 19px;
+  color: #2C3BA0;
+}
+#iphone .iphone--blocks__block3--content__p .pup1 {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 19px;
+  color: #646986;
+}
+#iphone .iphone--blocks__block3--content__price {
+  margin: 20px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#iphone .iphone--blocks__block3--content__price h4 {
+  margin-right: 80px;
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 18px;
+  /* Цвет темы */
+  color: #0C76D8;
+}
+#iphone .iphone--blocks__block3--content__price ion-icon {
+  width: 20px;
+  height: 17px;
+  color: #EB2D66;
+  border: 1px solid #EB2D66;
+}
+#iphone .iphone--blocks__block4 {
+  background: #ffffff;
+  box-shadow: 0 15px 50px rgba(67, 76, 109, 0.08);
+}
+#iphone .iphone--blocks__block4:hover {
+  background: #6e6c6c;
+}
+#iphone .iphone--blocks__block4 h3 {
+  margin: 10px 20px;
+  font-weight: 900;
+  font-size: 17px;
+  line-height: 21px;
+  color: #2A2D46;
+}
+#iphone .iphone--blocks__block4 img {
+  display: flex;
+  align-items: center;
+  margin: 40px 35px;
+}
+#iphone .iphone--blocks__block4--content__p {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#iphone .iphone--blocks__block4--content__p .pup {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 19px;
+  color: #2C3BA0;
+}
+#iphone .iphone--blocks__block4--content__p .pup1 {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 19px;
+  color: #646986;
+}
+#iphone .iphone--blocks__block4--content__price {
+  margin: 20px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#iphone .iphone--blocks__block4--content__price h4 {
+  margin-right: 80px;
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 18px;
+  /* Цвет темы */
+  color: #0C76D8;
+}
+#iphone .iphone--blocks__block4--content__price ion-icon {
+  width: 20px;
+  height: 17px;
+  color: #EB2D66;
+  border: 1px solid #EB2D66;
+}
+
+#san .san--title h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  color: #2A2D46;
+}
+#san .san--blocks {
+  margin: 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#san .san--blocks__block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#san .san--blocks__block h1 {
+  margin: 0 15px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 61px;
+  color: #2A2D46;
+}
+#san .san--blocks__block p {
+  width: 175px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #2A2D46;
+}
+
+#gadjetum {
+  width: 1500px;
+  height: 310px;
+  background: #343A62;
+}
+#gadjetum .gadjetum--block {
+  padding-top: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#gadjetum .gadjetum--block__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#gadjetum .gadjetum--block__title--title1 {
+  margin: 0 5px;
+}
+#gadjetum .gadjetum--block__title--title2 h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+#gadjetum .gadjetum--block__title--title2 p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 11px;
+  color: #FFFFFF;
+}
+#gadjetum .gadjetum--block__a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#gadjetum .gadjetum--block__a p {
+  margin: 0 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  cursor: pointer;
+  color: #FFFFFF;
+}
+#gadjetum .gadjetum--block__a p:hover {
+  color: darkorange;
+}
+#gadjetum .gadjetum--block__nunes {
+  display: flex;
+  align-items: center;
+}
+#gadjetum .gadjetum--block__nunes ion-icon {
+  width: 15px;
+  height: 20px;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+}
+#gadjetum .gadjetum--block__nomber {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#gadjetum .gadjetum--block__nomber h1 {
+  margin: 0 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #FFFFFF;
+}
+#gadjetum .gadjetum--block__nomber button {
+  width: 130px;
+  height: 30px;
+  color: #f1e4e4;
+  background: rgba(235, 45, 96, 0.63);
+  border: 1px solid #EB2D66;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 11px;
+}
+#gadjetum .gadjetum--block__nomber button:hover {
+  color: darkorange;
+  background: #FFFFFF;
+}
+
+/*# sourceMappingURL=style.css.map */
