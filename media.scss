@@ -19,27 +19,265 @@
 
 }
 @media (max-width: 1024px) {
+  #hero .hero--nav .fon {
+    position: relative;
+    width: 579px;
+  }
+  #hero .hero--nav .drone {
+    width: 416px;
+  }
+  #tabs .tabs--blocks {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 2rem;
+  }
+  #iphone .iphone--blocks {
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+  }
 
+  #san .san--blocks {
+    margin: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-wrap: wrap;
+  }
+  #gadjetum{
+    width: 1024px;
+  }
 
 }
 @media (max-width: 992px) {
+  #hero .hero--nav .fon{
+    position: relative;
+    width: 513px;
+  }
+  #hero .hero--nav .drone{
+    width: 359px;
+  }
+
+  #hero .hero--nav__title--t {
+    position: absolute;
+    width: 111px;
+    height: 22px;
+    left: 277px;
+  }
+  #gadjetum{
+    width: 992px;
+  }
 
 }
 @media (max-width: 768px) {
+  #iphone .iphone--blocks {
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+  }
+  #hero .hero--nav .fon {
+    position: relative;
+    width: 333px;
+  }
+  #hero .hero--nav .drone {
+    width: 174px;
+  }
+  #gadjetum {
+    width: 768px;
+  }
+
+  #hero .hero--block h1 {
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 34px;
+  }
+
+  #hero .hero--block p {
+    font-size: 13px;
+  }
+  #hero .hero--block button{
+    width: 166px;
+    height: 45px;
+  }
+  #hero .hero--nav__title--t h3{
+    font-size: 5px;
+  }
+  #hero .hero--nav__title--t p{
+    font-size: 8px;
+  }
+  #hero .hero--nav__title--t h1{
+    font-size: 8px;
+  }
+  #hero .hero--nav__title--t{
+    position: absolute;
+    left: 150px;
+    bottom: 80px;
+  }
+  .main--blocks__block img{
+    width: 500px;
+  }
+  #main .main--blocks__block--h1 {
+    position: absolute;
+    bottom: 132px;
+    right: 90px;
+  }
+  #main .main--blocks__block--h1__pl{
+    bottom: 203px;
+    left: 350px;
+  }
+  .main--blocks__block1 img{
+    width: 500px;
+  }
+  #main .main--blocks__block1--h1 {
+    position: absolute;
+    bottom: 132px;
+    right: 80px;
+  }
+  #main .main--blocks__block1--h1__pl{
+    bottom: 203px;
+    left: 350px;
+  }
 
 }
 @media (max-width: 576px) {
+  #header .header--block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  #hero .hero{
+    flex-direction: column;
+  }
+  #tabs .tabs--blocks {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 1rem;
+
+  }
+  #tabs .tabs--titles__labels--l {
+    flex-wrap: wrap;
+  }
+  #iphone .iphone--blocks{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 1rem;
+
+  }
+  #gadjetum{
+    width: 576px;
+  }
+  #gadjetum .gadjetum--block{
+    flex-wrap: wrap;
+  }
+  #tabs .tabs--blocks{
+    width: 255px;
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    gap: 1rem;
+  }
+  #main .main--title img{
+    width: 300px;
+  }
+#iphone .iphone--blocks{
+  width: 255px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+}
+  #gadjetum{
+    width: 450px;
+  }
 
 }
 @media (max-width: 450px) {
+  #tabs .tabs--blocks{
+    width: 255px;
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    gap: 1rem;
+  }
+  #main .main--title img{
+    width: 300px;
+  }
+  #iphone .iphone--blocks{
+    width: 255px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+  }
+  #gadjetum{
+    width: 450px;
+  }
+
 
 }
 @media (max-width: 400px) {
+  #gadjetum{
+    width: 400px;
+  }
+  .main--blocks__block img{
+    width: 350px;
+  }
+  #main .main--blocks__block--h1 {
+    position: absolute;
+    bottom: 70px;
+    left: 50px;
+  }
+  #main .main--blocks__block--h1 p {
+    font-size: 10px;
+  }
+  #main .main--blocks__block--h1 h1 {
+    font-size: 19px;
+  }
+  #main .main--blocks__block--h1__pl{
+    bottom: 164px;
+    left: 229px;
+  }
+  .main--blocks__block1 img{
+    width: 350px;
+  }
+  #main .main--blocks__block1--h1 {
+    position: absolute;
+    bottom: 70px;
+    left: 30px;
+  }
+  #main .main--blocks__block1--h1 p {
+    font-size: 10px;
+  }
+  #main .main--blocks__block1--h1 h1 {
+    font-size: 19px;
+    width: 200px;
+  }
+  #main .main--blocks__block1--h1__pl{
+    bottom: 164px;
+    left: 229px;
+  }
+
+
+
+
+
 
 }
 @media (max-width: 376px) {
+  #gadjetum{
+    width: 376px;
+  }
 
 }
 @media (max-width: 320px) {
+  #gadjetum{
+    width: 320px;
+  }
+  #hero .hero--nav .fon{
+    width: 297px
+  }
+  #hero .hero--nav .drone{
+    width: 138px;
+  }
+  .hero--block{
+    margin-left: 55px;
+  }
 
 }
