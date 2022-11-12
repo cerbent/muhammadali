@@ -252,8 +252,15 @@
   #hero .hero--nav .drone {
     width: 138px;
   }
-  .hero--block {
-    margin-left: 55px;
+  #hero .hero--block p {
+    width: 265px;
+  }
+  #san .san--blocks__block h1 {
+    font-size: 37px;
+  }
+  #san .san--blocks__block p {
+    width: 150px;
+    font-size: 10px;
   }
 }
 
